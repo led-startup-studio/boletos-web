@@ -1,38 +1,88 @@
 .App {
+  min-height: 100vh;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  flex-direction: column;
+  align-items: stretch;
+  background-color: #282c34;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 2%;
+  font-size: calc(20px + 2vmin);
+  color: white;
+}
+
+.App-body {
+  display: flex;
+  min-height: 50vh;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  padding-top: 2%;
   font-size: calc(10px + 2vmin);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.App-footer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 2%;
+  padding: 1%;
+  font-size: 2vmin;
+  color: white;
+}
+
+.Barcode-input {
+  width: 600px;
+  height: 4vmin;
+  margin: 2%;
+  font-size: large;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.Barcode-output {
+  flex-direction: column;
+  margin: 2%;
+  width: fit-content; 
+  height: fit-content;
+  background-color: white;
+  border-radius: 10px 5% / 20px 30px;
+  display: inline-block;
+  color: black;
+  font-size: medium;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: start;
+  padding: 2%;
+}
+
+.App-logo {
+  height: 10vmin;
+  margin: 1%;
+  pointer-events: none;
+  border-radius: 100%;
+  background-color: rgba(40, 44, 52, 0.05);
+  background-image: radial-gradient(circle, whitesmoke 10%, transparent 50%);
+  float: left;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    /* animation-duration: 5s; */
+    animation: App-logo-spin infinite 2s alternate;
+  }
 }
 
 @keyframes App-logo-spin {
   from {
-    transform: rotate(0deg);
+    background-color: rgba(40, 44, 52, 0.05);
   }
   to {
-    transform: rotate(360deg);
+    background-color: rgba(245, 245, 245, 0.1);
   }
 }
