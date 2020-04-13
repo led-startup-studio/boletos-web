@@ -1153,9 +1153,10 @@
     "@types/yargs" "^15.0.0"
     chalk "^3.0.0"
 
-"@ledstartup/boleto@https://github.com/led-startup-studio/boletos.git":
+"@ledstartupstudio/boleto@^0.1.0":
   version "0.1.0"
-  resolved "https://github.com/led-startup-studio/boletos.git#00ff5136175aad3508c1dfeaf929f002a7d36187"
+  resolved "https://registry.yarnpkg.com/@ledstartupstudio/boleto/-/boleto-0.1.0.tgz#b5840f77f2412b13d17c77caec1c06b1407adb8b"
+  integrity sha512-NPfGe699gPEOwvrU8BkkiQm1rYU7cXYPMcRJzqYm+gWciwncWG49Jj74Imo66IG1K8qUH2qgWuy9oE831I0V7A==
   dependencies:
     moment "^2.24.0"
 

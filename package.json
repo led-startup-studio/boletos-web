@@ -4,7 +4,7 @@
   "private": false,
   "homepage": "http://led-startup-studio.github.io/boletos-web",
   "dependencies": {
-    "@ledstartup/boleto": "https://github.com/led-startup-studio/boletos.git",
+    "@ledstartupstudio/boleto": "^0.1.0",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import logo from './logo.png';
 import './App.css';
 import InputMask from 'react-input-mask';
-import Billets, { TributeBillet, BankBillet, list as bankList } from '@ledstartup/boleto';
+import Billets, { TributeBillet, BankBillet, list as bankList } from '@ledstartupstudio/boleto';
 import VMasker from 'vanilla-masker';
 
 const maskBankBillet = (billetNumber: string) => 
