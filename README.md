@@ -1,6 +1,6 @@
 # [Boletos Web](https://led-startup-studio.github.io/boletos-web/)
 
-It is a [web interface]((https://led-startup-studio.github.io/boletos-web/)) to use the [boletos api](https://github.com/led-startup-studio/boletos).
+It is a [web interface](https://led-startup-studio.github.io/boletos-web/) to use the [boletos api](https://github.com/led-startup-studio/boletos).
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
