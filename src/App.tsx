@@ -4,6 +4,7 @@ import './App.css';
 import InputMask from 'react-input-mask';
 import Billets, { TributeBillet, BankBillet, list as bankList } from '@ledstartupstudio/boleto';
 import VMasker from 'vanilla-masker';
+import GitHubForkRibbon from 'react-github-fork-ribbon';
 
 const maskBankBillet = (billetNumber: string) => 
   VMasker.toPattern(VMasker.toNumber(billetNumber), "SSSSS.SSSSS SSSSS.SSSSSS SSSSS.SSSSSS S SSSSSSSSSSSSSS");
@@ -75,6 +76,12 @@ function App() {
           <label>Boletos</label>
       </header>
       <div className="App-body">
+        <GitHubForkRibbon position="right" 
+                          color="orange"
+                          href="//github.com/led-startup-studio/boletos" 
+                          target="_blank" > 
+          Fork me on GitHub 
+        </GitHubForkRibbon> 
         <div>
           <label>
             Código de barras ou linha digitável:
