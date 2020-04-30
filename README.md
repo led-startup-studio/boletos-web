@@ -1,6 +1,6 @@
-# Boletos Web
+# [Boletos Web](https://led-startup-studio.github.io/boletos-web/)
 
-It is a web interface to use the [boletos](https://github.com/led-startup-studio/boletos) library.
+It is a [web interface]((https://led-startup-studio.github.io/boletos-web/)) to use the [boletos api](https://github.com/led-startup-studio/boletos).
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -11,9 +11,7 @@ In the project directory, you can run:
 
 ### `yarn deploy`
 
-Update github pages with new release.
-[Boletos Web](https://led-startup-studio.github.io/boletos-web/)
-
+Update GitHub pages with new release.
 
 ### `yarn start`
 
