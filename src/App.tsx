@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import logo from './logo.png';
 import './App.css';
 import InputMask from 'react-input-mask';
-import Billets, { TributeBillet, BankBillet, list as bankList } from '@ledstartupstudio/boleto';
+import Billets, { TributeBillet, BankBillet, banks } from '@ledstartupstudio/boleto';
 import VMasker from 'vanilla-masker';
 import GitHubForkRibbon from 'react-github-fork-ribbon';
 
@@ -40,7 +40,7 @@ function App() {
       <div><label>Tipo: {billet instanceof BankBillet ? "Bancário" : "Tributo"}</label></div>
       <div><label>Código de barras: {billet?.toBarcode()}</label></div>
       <div><label>Linha digitável: {maskBankBillet(billet?.toLine())}</label></div>
-      <div><label>Banco: {billet?.getBillet().bank} - {bankList.get(billet?.getBillet().bank) || "Desconhecido"}</label></div>
+      <div><label>Banco: {billet?.getBillet().bank} - {banks.get(billet?.getBillet().bank) || "Desconhecido"}</label></div>
       <div><label>Valor: R$ {(Number(billet?.getBillet().value || 0)/100).toFixed(2)}</label></div>
       <div><label>Moeda: {billet?.getBillet().currency}</label></div>
       <div><label>Validade: {billet?.getBillet().date.format("DD/MM/YYYY")}</label></div>
